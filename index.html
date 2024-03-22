@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달력</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c92986acdf.js" crossorigin="anonymous"></script>
+    <script src="calendar.js" defer></script>
+</head>
+<body>
+    <section class="main">
+        <h1 class="main-title">Calendar</h1>
+        <div class="month clearfix">
+            <span class="left">
+                <i class="fas fa-chevron-left left"></i>
+            </span>
+            <span class="right">
+                <i class="fas fa-chevron-right right"></i>
+            </span>
+            <p class="month-name"></p>
+        </div>
+        <div class="dayCount">
+            <ul class="dayCount-list clearfix">
+                <li>월요일</li>
+                <li>화요일</li>
+                <li>수요일</li>
+                <li>목요일</li>
+                <li>금요일</li>
+                <li>토요일</li>
+                <li>일요일</li>
+            </ul>
+        </div>
+        <ul class="day clearfix">
+
+        </ul>
+
+    </section>
+    <section class="todo">
+        <h1 class="todo-title">
+            Today's To Do List
+        </h1>
+        <div class="textToDo">
+            <input type="text" class="textToDo-text">
+            <button class="textToDo-button add">추가하기</button>
+            <button class="textToDo-button reset">지우기</button>
+            <button class="textToDo-button allreset">모두 지우기</button>
+        </div>
+        <ul class="todoList"></ul>
+    </section>
+
+</body>
+</html>
